@@ -1,0 +1,26 @@
+const r = require("raylib");
+function setup() {
+  r.InitWindow(windowWidth, windowHeight, "Center rectangle");
+  r.SetTargetFPS(FPS);
+}
+
+function update() {}
+
+function draw() {
+  r.DrawCircle();
+}
+
+function loop() {
+  while (!r.WindowShouldClose()) {
+    update();
+    draw();
+  }
+}
+
+function main() {
+  setup();
+  loop();
+  r.CloseWindow();
+}
+
+main();
