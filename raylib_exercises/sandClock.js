@@ -65,6 +65,7 @@ function update() { }
 
 function draw() {
   r.BeginDrawing();
+  r.ClearBackground(r.BLACK)
   r.DrawCircle(upCenterX, upCenterY, circleRadius, r.WHITE);
   r.DrawRectangle(upRectangleX, upRectangley, RectWidth, RectHeight, r.BLACK);
   r.DrawCircle(downCenterX, downCentery, circleRadius, r.WHITE);
